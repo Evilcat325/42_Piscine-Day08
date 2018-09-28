@@ -6,7 +6,7 @@
 /*   By: seli <seli@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/09/28 00:16:13 by seli              #+#    #+#             */
-/*   Updated: 2018/09/28 01:52:29 by seli             ###   ########.fr       */
+/*   Updated: 2018/09/28 02:36:03 by seli             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,22 +14,23 @@
 
 struct s_stock_par	*ft_param_to_tab(int ac, char **av)
 {
-	t_stock_par	**ptr;
+	t_stock_par	*ptr;
 	int			i;
 
 	i = 0;
-	ptr = malloc(sizeof(t_stock_par *) * ac);
+	ptr = (t_stock_par *)malloc(sizeof(t_stock_par) * ac);
 	if (!ptr)
 		return ((t_stock_par *)0);
 	while (i < ac)
 	{
-		ptr[i]->size_param = ft_strlen(av[i]);
-		ptr[i]->str = av[i];
-		ptr[i]->copy = ft_strdup(av[i]);
-		ptr[i]->tab = ft_split_whitespaces(av[i]);
+		ptr[i].size_param = ft_strlen(av[i]);
+		ptr[i].str = av[i];
+		ptr[i].copy = ft_strdup(av[i]);
+		ptr[i].tab = ft_split_whitespaces(av[i]);
+		i++;
 	}
-	ptr[i] = (t_stock_par *)0;
-	return (ptr[0]);
+	ptr[i] = (t_stock_par){0, 0, 0, 0};
+	return (ptr);
 }
 
 char				*ft_strdup(char *src)
