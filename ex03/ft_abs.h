@@ -6,7 +6,7 @@
 /*   By: seli <seli@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/09/28 00:02:16 by seli              #+#    #+#             */
-/*   Updated: 2018/09/28 03:03:00 by seli             ###   ########.fr       */
+/*   Updated: 2018/09/28 03:08:17 by seli             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,6 @@
 # define FT_ABS_H
 
 # define EDGE(X) ((X == -2147483648) ? 0 : X)
-# define ABS(X) (EDGE(X) < 0 ? -X : X)
+# define ABS(X) (EDGE(X) < 0 ? -EDGE(X) : EDGE(X))
 
 #endif
