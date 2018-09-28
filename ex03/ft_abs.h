@@ -6,13 +6,14 @@
 /*   By: seli <seli@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/09/28 00:02:16 by seli              #+#    #+#             */
-/*   Updated: 2018/09/28 02:54:22 by seli             ###   ########.fr       */
+/*   Updated: 2018/09/28 03:03:00 by seli             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef FT_ABS_H
 # define FT_ABS_H
 
-# define ABS(X) (X < 0 ? -X : X)
+# define EDGE(X) ((X == -2147483648) ? 0 : X)
+# define ABS(X) (EDGE(X) < 0 ? -X : X)
 
 #endif
