@@ -6,13 +6,13 @@
 /*   By: seli <seli@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/09/28 00:02:16 by seli              #+#    #+#             */
-/*   Updated: 2018/09/28 00:02:19 by seli             ###   ########.fr       */
+/*   Updated: 2018/09/28 02:54:22 by seli             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef FT_ABS_H
 # define FT_ABS_H
 
-# define ABS(value) value < 0 ? -value : value
+# define ABS(X) (X < 0 ? -X : X)
 
 #endif

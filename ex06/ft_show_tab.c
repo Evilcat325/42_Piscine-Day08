@@ -6,7 +6,7 @@
 /*   By: seli <seli@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/09/28 01:33:14 by seli              #+#    #+#             */
-/*   Updated: 2018/09/28 02:04:33 by seli             ###   ########.fr       */
+/*   Updated: 2018/09/28 02:57:03 by seli             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,18 +15,20 @@
 void	ft_show_tab(struct s_stock_par *par)
 {
 	int i;
+	int word;
 
-	while (par)
+	i = 0;
+	while (par[i].str)
 	{
-		i = 0;
-		ft_putstr(par->copy);
-		ft_putnbr(par->size_param);
-		while (par->tab[i])
+		word = 0;
+		ft_putstr(par[i].copy);
+		ft_putnbr(par[i].size_param);
+		while (par[i].tab[word])
 		{
-			ft_putstr(par->tab[i++]);
+			ft_putstr(par[i].tab[word++]);
 			ft_putchar('\n');
 		}
-		par++;
+		i++;
 	}
 }
 
