@@ -6,17 +6,14 @@
 /*   By: seli <seli@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/09/28 01:33:49 by seli              #+#    #+#             */
-/*   Updated: 2018/09/28 02:05:53 by seli             ###   ########.fr       */
+/*   Updated: 2018/09/28 03:19:10 by seli             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef FT_STOCK_PAR_H
 # define FT_STOCK_PAR_H
 
-# ifndef STDLIB_H
-#  define STDLIB_H
-#  include <stdlib.h>
-# endif
+# include <stdlib.h>
 
 typedef struct		s_stock_par
 {
