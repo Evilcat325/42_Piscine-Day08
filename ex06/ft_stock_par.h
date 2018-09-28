@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: seli <seli@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/09/28 00:09:17 by seli              #+#    #+#             */
-/*   Updated: 2018/09/28 01:46:28 by seli             ###   ########.fr       */
+/*   Created: 2018/09/28 01:33:49 by seli              #+#    #+#             */
+/*   Updated: 2018/09/28 02:05:53 by seli             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,8 @@ typedef struct		s_stock_par
 char				**ft_split_whitespaces(char *str);
 void				ft_show_tab(struct s_stock_par *par);
 struct s_stock_par	*ft_param_to_tab(int ac, char **av);
-int					ft_strlen(char *str);
-char				*ft_strdup(char *src);
+void				ft_putchar(char c);
+void				ft_putstr(char *str);
+void				ft_putnbr(int nb);
 
 #endif
