@@ -6,7 +6,7 @@
 /*   By: seli <seli@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/09/27 23:17:38 by seli              #+#    #+#             */
-/*   Updated: 2018/09/27 23:33:38 by seli             ###   ########.fr       */
+/*   Updated: 2018/09/27 23:58:32 by seli             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,8 @@
 # define ODD_MSG	"I have an odd number of arguments.\n"
 # define SUCCESS	0
 
-typedef int			t_bool;
+typedef int	t_bool;
+void		ft_putstr(char *str);
+t_bool		ft_is_even(int nbr);
 
 #endif
